@@ -49,4 +49,4 @@ from sales
 inner join employees on sales.EmployeeID = employees.EmployeeID
 inner join products on products.ProductID = sales.ProductID
 group by employees.EmployeeID, products.ProductID
-order by sales.Quantity desc;
+order by employees.EmployeeID desc;
